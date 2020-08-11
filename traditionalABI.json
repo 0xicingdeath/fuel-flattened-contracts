@@ -1,0 +1,1111 @@
+[
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "operator"
+      },
+      {
+        "type": "uint256",
+        "name": "finalizationDelay"
+      },
+      {
+        "type": "uint256",
+        "name": "submissionDelay"
+      },
+      {
+        "type": "uint256",
+        "name": "penaltyDelay"
+      },
+      {
+        "type": "uint256",
+        "name": "bond"
+      },
+      {
+        "type": "string",
+        "name": "name"
+      },
+      {
+        "type": "string",
+        "name": "version"
+      },
+      {
+        "type": "uint256",
+        "name": "chainId"
+      },
+      {
+        "type": "bytes32",
+        "name": "genesis"
+      }
+    ],
+    "payable": false,
+    "stateMutability": null,
+    "type": "constructor"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": ""
+      },
+      {
+        "type": "uint256",
+        "name": ""
+      }
+    ],
+    "name": "transfer",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": ""
+      }
+    ],
+    "name": "balanceOf",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "account"
+      },
+      {
+        "type": "address",
+        "name": "token"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "merkleTreeRoot"
+      },
+      {
+        "type": "uint256",
+        "name": "token"
+      },
+      {
+        "type": "uint256",
+        "name": "fee"
+      },
+      {
+        "type": "bytes",
+        "name": "transactions"
+      }
+    ],
+    "name": "commitRoot",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "uint32",
+        "name": "minimum"
+      },
+      {
+        "type": "bytes32",
+        "name": "minimumHash"
+      },
+      {
+        "type": "uint32",
+        "name": "height"
+      },
+      {
+        "type": "bytes32[]",
+        "name": "roots"
+      }
+    ],
+    "name": "commitBlock",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "transactionId"
+      }
+    ],
+    "name": "commitWitness",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "addr"
+      }
+    ],
+    "name": "commitAddress",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "id"
+      }
+    ],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "blockHeader"
+      },
+      {
+        "type": "bytes",
+        "name": "rootHeader"
+      },
+      {
+        "type": "uint16",
+        "name": "rootIndex"
+      },
+      {
+        "type": "bytes",
+        "name": "transactions"
+      }
+    ],
+    "name": "proveMalformedBlock",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "transactionProof"
+      }
+    ],
+    "name": "proveInvalidTransaction",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proofA"
+      },
+      {
+        "type": "bytes",
+        "name": "proofB"
+      }
+    ],
+    "name": "proveInvalidInput",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proofA"
+      },
+      {
+        "type": "bytes",
+        "name": "proofB"
+      }
+    ],
+    "name": "proveDoubleSpend",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "transactionProof"
+      },
+      {
+        "type": "bytes",
+        "name": "inputProofs"
+      }
+    ],
+    "name": "proveInvalidWitness",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "transactionProof"
+      },
+      {
+        "type": "bytes",
+        "name": "inputProofs"
+      }
+    ],
+    "name": "proveInvalidSum",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proof"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "blockHeader"
+      }
+    ],
+    "name": "bondWithdraw",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": null,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "account"
+      },
+      {
+        "type": "uint32",
+        "name": "blockNumber"
+      }
+    ],
+    "name": "witnessAt",
+    "outputs": [
+      {
+        "type": "bytes32",
+        "name": "transactionId"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "account"
+      }
+    ],
+    "name": "funnel",
+    "outputs": [
+      {
+        "type": "address",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "blockHeader"
+      },
+      {
+        "type": "bytes",
+        "name": "root"
+      },
+      {
+        "type": "uint256",
+        "name": "rootIndex"
+      },
+      {
+        "type": "uint8",
+        "name": "assertFinalized"
+      }
+    ],
+    "name": "verifyHeader",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proof"
+      },
+      {
+        "type": "uint8",
+        "name": "assertFinalized"
+      }
+    ],
+    "name": "verifyTransaction",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proof"
+      }
+    ],
+    "name": "selectUTXO",
+    "outputs": [
+      {
+        "type": "bytes32",
+        "name": "transactionId"
+      },
+      {
+        "type": "uint8",
+        "name": "outputIndex"
+      },
+      {
+        "type": "uint8",
+        "name": "outputType"
+      },
+      {
+        "type": "address",
+        "name": "owner"
+      },
+      {
+        "type": "uint256",
+        "name": "amount"
+      },
+      {
+        "type": "uint32",
+        "name": "token"
+      },
+      {
+        "type": "bytes32",
+        "name": "digest"
+      },
+      {
+        "type": "uint256",
+        "name": "expiry"
+      },
+      {
+        "type": "address",
+        "name": "returnOwner"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proof"
+      }
+    ],
+    "name": "selectOutput",
+    "outputs": [
+      {
+        "type": "bytes",
+        "name": "output"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proof"
+      }
+    ],
+    "name": "outputMetadata",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "metadata"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proof"
+      }
+    ],
+    "name": "inputMetadata",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "metadata"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes",
+        "name": "proof"
+      },
+      {
+        "type": "uint8",
+        "name": "index"
+      }
+    ],
+    "name": "selectMetadata",
+    "outputs": [
+      {
+        "type": "bytes8",
+        "name": "metadata"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "operator",
+    "outputs": [
+      {
+        "type": "address",
+        "name": "operator"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "blockTip",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "blockTip"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "numTokens",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "numTokens"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "token"
+      }
+    ],
+    "name": "tokenId",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "tokenId"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "numAddresses",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "numAddresses"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "owner"
+      }
+    ],
+    "name": "addressId",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "addressId"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "account"
+      },
+      {
+        "type": "uint32",
+        "name": "token"
+      },
+      {
+        "type": "uint32",
+        "name": "blockNumber"
+      }
+    ],
+    "name": "depositAt",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "amount"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "blockHeight"
+      }
+    ],
+    "name": "blockCommitment",
+    "outputs": [
+      {
+        "type": "bytes32",
+        "name": "blockHash"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "root"
+      }
+    ],
+    "name": "rootBlockNumberAt",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "blockNumber"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "blockHeight"
+      },
+      {
+        "type": "bytes32",
+        "name": "withdrawalId"
+      }
+    ],
+    "name": "isWithdrawalProcessed",
+    "outputs": [
+      {
+        "type": "bool",
+        "name": "withdrawn"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "BOND_SIZE",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "MAX_ROOT_SIZE",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "SUBMISSION_DELAY",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "FINALIZATION_DELAY",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "PENALTY_DELAY",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "penalty",
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "name",
+    "outputs": [
+      {
+        "type": "string",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "gas": null,
+    "inputs": [],
+    "name": "version",
+    "outputs": [
+      {
+        "type": "string",
+        "name": ""
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "token",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "id",
+        "indexed": true
+      }
+    ],
+    "name": "TokenIndexed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "owner",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "id",
+        "indexed": true
+      }
+    ],
+    "name": "AddressIndexed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "producer",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "numTokens",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "numAddresses",
+        "indexed": false
+      },
+      {
+        "type": "bytes32",
+        "name": "previousBlockHash",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "height",
+        "indexed": true
+      },
+      {
+        "type": "bytes32[]",
+        "name": "roots",
+        "indexed": false
+      }
+    ],
+    "name": "BlockCommitted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "type": "bytes32",
+        "name": "root",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "rootProducer",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "feeToken",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "fee",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "rootLength",
+        "indexed": false
+      },
+      {
+        "type": "bytes32",
+        "name": "merkleTreeRoot",
+        "indexed": true
+      },
+      {
+        "type": "bytes32",
+        "name": "commitmentHash",
+        "indexed": true
+      }
+    ],
+    "name": "RootCommitted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "owner",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "blockNumber",
+        "indexed": false
+      },
+      {
+        "type": "bytes32",
+        "name": "transactionId",
+        "indexed": true
+      }
+    ],
+    "name": "WitnessCommitted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "previousTip",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "currentTip",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "fraudCode",
+        "indexed": true
+      }
+    ],
+    "name": "FraudCommitted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "owner",
+        "indexed": true
+      },
+      {
+        "type": "uint32",
+        "name": "token",
+        "indexed": true
+      },
+      {
+        "type": "uint256",
+        "name": "value",
+        "indexed": false
+      }
+    ],
+    "name": "DepositMade",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "type": "address",
+        "name": "owner",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "tokenAddress",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "amount",
+        "indexed": false
+      },
+      {
+        "type": "uint32",
+        "name": "blockHeight",
+        "indexed": true
+      },
+      {
+        "type": "uint32",
+        "name": "rootIndex",
+        "indexed": false
+      },
+      {
+        "type": "bytes32",
+        "name": "transactionLeafHash",
+        "indexed": true
+      },
+      {
+        "type": "uint8",
+        "name": "outputIndex",
+        "indexed": false
+      },
+      {
+        "type": "uint32",
+        "name": "transactionIndex",
+        "indexed": false
+      }
+    ],
+    "name": "WithdrawalMade",
+    "type": "event"
+  }
+]
